@@ -1,3 +1,13 @@
 <ons-page id="search">
-    <p>This is search page</p>
+   
+        <ons-page>
+          <ons-toolbar>
+            <div class="center">Search Movie</div>
+          </ons-toolbar>
+          <p>
+            <ons-search-input placeholder="Search something" v-model="query"></ons-search-input>
+          </p>
+          <p>Query: {{ query }}</p>
+        </ons-page>
+        <div id="app"></div>
 </ons-page>
