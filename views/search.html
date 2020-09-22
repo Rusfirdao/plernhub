@@ -1,13 +1,81 @@
 <ons-page id="search">
-   
-        <ons-page>
-          <ons-toolbar>
-            <div class="center">Search Movie</div>
-          </ons-toolbar>
-          <p>
-            <ons-search-input placeholder="Search something" v-model="query"></ons-search-input>
-          </p>
-          <p>Query: {{ query }}</p>
-        </ons-page>
-        <div id="app"></div>
+  <p style="text-align: center; margin-top: 10px">
+    <ons-search-input
+      placeholder="Search"
+      onchange="ons.notification.alert('Searched for: ' + this.value)"
+    >
+    </ons-search-input>
+  </p>
+
+  <ons-list-item>
+    <div class="left">
+      <img
+        class="list-item__thumbnail img-search"
+        src="images/Maleficent poster.jpg"
+      />
+    </div>
+    <div class="center">
+      <span class="list-item__title bold">Maleficent (2019)</span>
+      
+ 
+      <span class="list-item__subtitle"
+        >The story of Maleficent starts years before the events of Sleeping Beauty, where Maleficent (Isobelle Molloy) is a young and powerful fairy living...</span
+      >
+      <span class="list-item__subtitle bold">Ratings</span>
+      <span class="list-item__subtitle bold">
+        <div class="icon-center">
+          <ons-icon class="icon" icon="md-star"> </ons-icon>
+          <ons-icon class="icon" icon="md-star"> </ons-icon>
+          <ons-icon class="icon" icon="md-star"> </ons-icon>
+          <ons-icon class="icon" icon="md-star"> </ons-icon>
+          <ons-icon class="icon" icon="md-star-outline"> </ons-icon>
+        </div>
+      </span>
+    </div>
+  </ons-list-item>
+
+  <ons-list-item>
+    <div class="left">
+      <img class="list-item__thumbnail img-search" src="images/fantastic.jpg" />
+    </div>
+    <div class="center">
+      <span class="list-item__title bold">Fantastic Beasts (2018)</span>
+      <span class="list-item__subtitle"
+        >Newt Scamander (Eddie Redmayne) travels from London to New York City
+        with a briefcase full of magical creatures, or fantastic beasts...</span
+      >
+      <span class="list-item__subtitle bold">Ratings</span>
+      <span class="list-item__subtitle bold">
+        <div class="icon-center">
+          <ons-icon class="icon" icon="md-star"> </ons-icon>
+          <ons-icon class="icon" icon="md-star"> </ons-icon>
+          <ons-icon class="icon" icon="md-star"> </ons-icon>
+          <ons-icon class="icon" icon="md-star"> </ons-icon>
+          <ons-icon class="icon" icon="md-star-half"> </ons-icon>
+        </div>
+      </span>
+    </div>
+  </ons-list-item>
+
+  <ons-list-item>
+    <div class="left">
+      <img class="list-item__thumbnail img-search" src="images/harry1.jpg" />
+    </div>
+    <div class="center">
+      <span class="list-item__title bold">Harry Potter (2012)</span>
+      <span class="list-item__subtitle"
+        >When he tried to kill a one-year-old boy, Harry Potter (Daniel Radcliffe), the killing curse rebounded upon him, destroying his body. Harry is left an orphan with...</span
+      >
+      <span class="list-item__subtitle bold">Ratings</span>
+      <span class="list-item__subtitle bold">
+        <div class="icon-center">
+          <ons-icon class="icon" icon="md-star"> </ons-icon>
+          <ons-icon class="icon" icon="md-star"> </ons-icon>
+          <ons-icon class="icon" icon="md-star"> </ons-icon>
+          <ons-icon class="icon" icon="md-star"> </ons-icon>
+          <ons-icon class="icon" icon="md-star"> </ons-icon>
+        </div>
+      </span>
+    </div>
+  </ons-list-item>
 </ons-page>
