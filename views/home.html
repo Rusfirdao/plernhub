@@ -1,21 +1,21 @@
 <ons-page id="home">
  
-  <ons-navigator swipeable id="myNavigator" page="page1.html"></ons-navigator>
-  <template id="page1.html">
-      <ons-page id="Home">
+  <ons-navigator swipeable id="myNavigator" page="homemovie.html"></ons-navigator>
+  <template id="homemovie.html">
+      <ons-page id="homemovie">
         <div class=" title "> <h1>Top 10 this month</h1></div>
-          <ons-carousel swipeable auto-scroll overscrollable id="carousel">
-              <ons-carousel-item >
+          <ons-carousel swipeable auto-scroll overscrollable id="homemovie">
+              <ons-carousel-item modifier="nodivider" id="Movie1">
                   <div>
                       <img class="img"  src="../images/harry1.jpg" alt="" id="harry">
                   </div>
               </ons-carousel-item>
-              <ons-carousel-item >
+              <ons-carousel-item  modifier="nodivider" id="Movie2">
                   <div >
                       <img class="img" src="../images/Maleficent Poster.jpg" alt="" id="Maleficent">
                   </div>
               </ons-carousel-item>
-              <ons-carousel-item >
+              <ons-carousel-item modifier="nodivider" id="Movie3">
                   <div  >
                       <img class=" img " src="../images/fantastic.jpg" alt=" "  >
                   </div>
@@ -28,5 +28,3 @@
     
 
 </ons-page>
-
-  
